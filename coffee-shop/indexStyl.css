@@ -1,0 +1,209 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E4CDA7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C3B091;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8e806a;
+}
+
+body {
+    background-color: #7E6A52;
+    /*#e4cda7*/
+
+}
+
+.Main {
+    box-sizing: content-box;
+   /* border: solid black;
+    /* später entfernen nur zum visualisieren überlegen ein margine festzulegen*/
+
+}
+
+.custom-border-bottom {
+    border-bottom: 2px solid #8e806a;
+}
+
+.HeaderUnderline {
+    background-color: #70483c;
+    border-bottom: solid 0.1px #a3715a;
+}
+
+header {
+    margin-left: 15%;
+    margin-right: 15%;
+
+
+}
+
+
+.Custom-navbar {
+    background-color: #70483c;
+}
+
+#Hd {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; /* Hintergrundfarbe des Headers anpassen */
+    transition: top 0.3s ease; /* Übergangseffekt mit einer Dauer von 0,3 Sekunden und einer leichten Beschleunigung */
+  }
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+    font-size: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.Container0 {
+    background-color: #70483c;
+}
+
+.Container1 {
+
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.P {
+
+    padding-top: 4%;
+    padding-bottom: 5%;
+
+}
+
+.HeadingT {
+    padding-top: 25%;
+}
+/*bis hier immer gleich*/
+
+
+
+.Color1 {
+    background-color: #C5A582;
+    padding-top: 20px;
+
+
+}
+
+.Box1 {
+    box-sizing: content-box;
+    /* border: solid black;
+    /* später entfernen nur zum visualisieren überlegen ein margine festzulegen*/
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.bd-placeholder-img {
+    border-radius: 50%;
+}
+
+.col-lg-4 p {
+    text-align: center;
+}
+
+.col-lg-4 h2 {
+    text-align: center;
+}
+
+.col-lg-4 {
+    text-align: center;
+}
+
+.Box2 {
+    box-sizing: content-box;
+    /* border: solid black;
+    /* später entfernen nur zum visualisieren überlegen ein margine festzulegen */
+
+}
+
+.Box3 {
+    box-sizing: content-box;
+    /*border: solid black;
+    /* später entfernen nur zum visualisieren überlegen ein margine festzulegen*/
+    margin-top: 10%;
+}
+
+.Box3-image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.Color2 {
+    box-sizing: content-box;
+    /* border: solid black;
+    /* später entfernen nur zum visualisieren überlegen ein margine festzulegen*/
+    background-color: #A1876A;
+    /*#D1B494 */
+}
+
+.Box4 {
+    box-sizing: content-box;
+    /* border: solid black;
+    /* später entfernen nur zum visualisieren überlegen ein margine festzulegen*/
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.row .Customize-Button {
+    background-color: #EEDDCC;
+}
+
+.row .Customize-Button:hover {
+    background-color: #CCBBAA;
+}
+
+.card img {
+
+    border-radius: 15px;
+    padding-top: 8px;
+
+}
+
+#ereichen {
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.nachricht,
+label {
+    color: black;
+    /* Überschrift farbe im formular */
+}
+
+.form-control {
+    background-color: white;
+    /* Hintergrundfarbe der Eingabefelder */
+    /* color: ;  /*Textfarbe der Eingabefelder */
+    border-bottom: 2px solid gainsboro;
+    /*untere Linie vom Eingabefelder (schatten) */
+}
+
+.btn-primary {
+    /* background-color: ; /*Hintergrundfarbe Buttons */
+    /*  color: ;  /*Textfarbe Buttons */
+}
+
+.btn-primary:hover {
+    /* background-color: ; /* hintergrundfarbe button hovern*/
+}
+
+footer {
+    background-color: #7E6A52;
+
+}

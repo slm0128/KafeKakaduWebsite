@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="../Img/menu_3.png">
+
+  <!-- Library-->
+  <link rel="stylesheet" href="../Library/css/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+
+  <!-- Eigen -->
+  <link rel="stylesheet" href="./speisekarteStyl.css">
+  <script defer src="./speisekarteJs.js"></script>
+
+  <title>Speisekarte</title>
+</head>
+
+<body onload="autoScroll();" onload="start();">
+
+  <div class="Main"> <!--vllt mx-5 anstatt left right 10%-->
+    <div class="HeaderUnderline">
+      <header id="Hd">
+
+        <nav class="navbar navbar-expand-lg Custom-navbar pt-3 pb-3">
+          <div class="container-fluid mx-auto">
+            <a href="../Index.html">
+              <img class="rounded " src="../Img/Kakadu1.jpeg" alt="Banner" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ps-2">
+                <a class="nav-link " aria-current="page" href="../Index.html">Home</a>
+                <a class="nav-link active" href="../Speisekarte/Speisekarte.html">Speisekarte</a>
+                <a class="nav-link " href="../Anfahrt/Anfahrt.html">Anfahrt</a>
+                <a class="nav-link " href="../Galerie/Galerie.html">Galarie</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+      </header>
+
+
+    </div>
+
+    <div class="Container0">
+      <div class="Container1">
+        <div class="row P"> <!-- 'row' Bootstrap classe 'P' eigen-->
+          <div class="col-md-7">
+            <h1 class="display-1 text-center HeadingT">Café Kakadu</h1>
+          </div>
+          <div class="col-md-5">
+            <img class="P-image img-fluid rounded mx-auto mt-3" src="../Img/Cofee3.jpeg" alt="...">
+            <!--img größe anpassen!-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Color1">
+      <div class="Box1 pb-5">
+        <div class="Box2">
+
+
+
+          <h1 class="text-center mt-5">Speisekarte</h1>
+
+          <div class="d-grid gap-2">
+            <br>
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+
+              <button class="btn btn-custom mb-2" id="showToGoButton">To-Go</button>
+              <div class="container" id="togo">
+                <div class="card">
+                  <img src="../Img/ToGo.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">To GO</h5>
+                    <p class="card-text">Espresso,Café, Cappuccino</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <button class="btn btn-custom mb-2" id="showEssenButton">Essen</button>
+              <div class="container" id="essen">
+
+                <div class="card">
+                  <img src="../Img/essen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Hausgemachte</h5>
+                    <p class="card-text">Hausgemachte Panini, Hausgemachte Tagessuppe (Bio&vegan), Kuchen (meist
+                      Hausgemacht)
+                    </p>
+                  </div>
+                </div>
+
+
+
+                <div class="card">
+                  <img src="../Img/essen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Baguettes</h5>
+                    <p class="card-text">Baguettes: Schinken, Salami o. Käse</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/essen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Bassics</h5>
+                    <p class="card-text">Croissant,Butterbrezel, Mini Schokokissen</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showKalteButton">Kalte Getränke</button>
+              <div class="container" id="kalteGetraenke" style="display: hide;">
+
+                <div class="card">
+                  <img src="../Img/Fritz.jpg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Fritz</h5>
+                    <p class="card-text">-Kola/ ohne Zucker/ Zitrone, -limo orange, -mischmasch, -bio-Traubenschorle,
+                      -bio-Rhabarberschorle, Apfel-Kirsch-Holunder</p>
+                  </div>
+                </div>
+
+                <div class="card"> <img src="../Img/ClubMate.webp"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Club-Mate</h5>
+                    <p class="card-text">Club-Mate</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/cola.png" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cola</h5>
+                    <p class="card-text">Coca cola</p>
+
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Schweppes.png" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Schweppes</h5> <!--weiß nicht ob die marke schweppes ist -->
+                    <p class="card-text">Tonic Water, Bitter Lemon, Spicy Ginger</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Orangina.png" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Orangina</h5> <!--weiß nicht ob die marke schweppes ist -->
+                    <p class="card-text">Orangina</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Wasser</h5> <!--weiß nicht ob die marke schweppes ist -->
+                    <p class="card-text">Mineralwasser, Frischgepresster Zitronenwasser, Lebensquell(still), Süßer
+                      Sprudel</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Eistee.jpg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Eistee</h5> <!--weiß nicht ob die marke schweppes ist -->
+                    <p class="card-text">Eistee Pfirsich, Krug Eistee Pfirsich(c.a0,75l)</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/redbull.png" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Red Bull</h5> <!--weiß nicht ob die marke schweppes ist -->
+                    <p class="card-text">Redbull(normal)</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showWarmeButton">Warme Getränke</button>
+              <div class="container" id="warmeGetraenke">
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Café </h5>
+                    <p class="card-text">Café Lavazza, Café-doppelt, Milchcafé (Bio Vollmilch auch mit Bio Hafermilch
+                      erhältlich), Milchcafé Schale (Bio Vollmilch auch mit Bio Hafermilch erhältlich) </p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Espresso</h5>
+                    <p class="card-text">Espresso, Espresso-doppelr, Espresso Macciato</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">macchiato</h5>
+                    <p class="card-text">Latte Macciato, Flavoured Latte Macciato</p>
+                    <p class="card-text">(Bio Vollmilch auch mit Bio Hafermilch erhältlich)(Caramel, Zimt, Vanille,
+                      Haselnuss,
+                      Kokos)</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cappuccino</h5>
+                    <p class="card-text">Cappuccino, Cappuccino groß</p>
+                    <p class="card-text">(Bio Vollmilch auch mit Bio Hafermilch erhältlich)</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Schoko</h5>
+                    <p class="card-text">Heiße Schokolade, Kakao, Ovomaltine</p>
+                    <p class="card-text">(Bio Vollmilch auch mit Bio Hafermilch erhältlich)</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Heiße Zitrone</h5>
+                    <p class="card-text">Heiße Zitrone,Heiße Zitrone mit honig</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Latte</h5>
+                    <p class="card-text">Chai Latte, Latte, Latte Macciato Bailey's</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Irish</h5>
+                    <p class="card-text">Irish Coffee</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WarmeGetränke.jpeg"
+                    class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tee</h5>
+                    <p class="card-text">Tee, Tee Kanne</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showSaefteButton">Säfte</button>
+              <div class="container" id="saefte">
+                <div class="card">
+                  <img src="../Img/Säfte.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Schorle</h5>
+                    <p class="card-text">Saftschorle</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Säfte.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">saft</h5>
+                    <p class="card-text">Annanas Fruchtsaft, Mango Fruchtsaft, Johannisbeersaft</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Säfte.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Bio</h5>
+                    <p class="card-text">Apfel Bio Naturtrüb, Orange Bio Direktsaft</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Säfte.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Nektar</h5>
+                    <p class="card-text">Kirsch Nektar, Maracuja Nektar, Pfirsich Nektar</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showCocktailsButton">Cocktails</button>
+              <div class="container" id="cocktails">
+                <div class="card">
+                  <img src="../Img/Cocktails.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Gin-basierte Cocktails</h5>
+                    <p class="card-text">Gimlet, Gin Fizz, </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Cocktails.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rum-basierte Cocktails</h5>
+                    <p class="card-text">Cuba Libre, Planter’s Punch, Pina Colada </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Cocktails.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cachaça-basierte Cocktails</h5>
+                    <p class="card-text">Caipirinha, Caipirovka</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Cocktails.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Wodka-basierte Cocktails</h5>
+                    <p class="card-text">Memphis, Moscow Mule, Tom Cruise, White Russian</p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="../Img/Cocktails.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Saisonabhängige Cocktails</h5>
+                    <p class="card-text">Hugo, Mojito </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Cocktails.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">Whiskey Sour, Aperol Spritz, Long Island Iced Tea , Tequila Sunrise</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showWeinButton">Wein / Prosecco</button>
+              <div class="container" id="wein">
+                <div class="card">
+                  <img src="../Img/WeinProsecco.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Weisswein</h5>
+                    <p class="card-text">Riesling, Müller- Thurgau, Grauburgunder, Weinschorle</p>
+                    <p class="card-text">(Trocken)</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WeinProsecco.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Weisswein</h5>
+                    <p class="card-text">Riesling, Müller- Thurgau, Grauburgunder, Weinschorle</p>
+                    <p class="card-text">(Trocken) (Sieferle Ortenberg)</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WeinProsecco.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rotwein</h5>
+                    <p class="card-text">Miedes (Spanien), Spatburgunder (Sieferle Ortenberg), Rosé (Trocken, Sieferle
+                      Ortenberg)</p>
+                    <p class="card-text">(Trocken)</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/WeinProsecco.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Secco/Sekt</h5>
+                    <p class="card-text">Secco(Glas), Secco Flasche, Grauburgunder Winzersekt oder Rosésekt Flasche</p>
+                    <p class="card-text">(Sieferle Ortenberg)</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showSpiritButton">Spirituusen</button>
+              <div class="container" id="spirituusen">
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Scotch</h5>
+                    <p class="card-text">Glenfiddich Scotch, Glenmorangie Scotch, Lagavulin 16 Jahre Scotch, Macallan 12
+                      Jahre Scotch</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Martini</h5>
+                    <p class="card-text">Martini Bianco, Martini D'Oro</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Irish</h5>
+                    <p class="card-text">Tullamore Dew Irish</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Jack Daniel's</h5>
+                    <p class="card-text">Jack Daniel's Bourbon</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Havana</h5>
+                    <p class="card-text">Havana</p>
+                    <p class="card-text">(3Jahre/7Jahre)</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vodka</h5>
+                    <p class="card-text">Absolut Vodka</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Gin</h5>
+                    <p class="card-text">Bombay Dry Gin</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Hennessy</h5>
+                    <p class="card-text">Hennessy V.S</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Rum</h5>
+                    <p class="card-text">Myers's Rum</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Spiritusen.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">Campari, Aperol, Ramazzotti, Ricard, Bacari (Light Dry), Bailey's, Malibu,
+                      Batida de Coco, Obstbrände, Four Roses Burbon</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showAlkFreiButton">Alkoholfrei</button>
+              <div class="container" id="alkfrei">
+                <div class="card">
+                  <img src="../Img/alkoholfrei.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Alkoholfrei</h5>
+                    <p class="card-text">Fruchtmix, Red Lounge, Sara, Virgin Colada, Lammsbräu alkoholfrei Bio, Jever
+                      fun alkoholfrei</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showBierButton">Biere</button>
+              <div class="container" id="bier">
+                <div class="card">
+                  <img src="../Img/Bier.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Waldhaus</h5>
+                    <p class="card-text">Diplom Pils, hell, Naturtrüb, Naturtrübdunkel, Natruradler</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Bier.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Weizen</h5>
+                    <p class="card-text">Hefe Weizen Hell (Waldhaus), Hefe Weizen Hell a.f (Erdinger), Hefe Weizen Hell
+                      (Maisel's), Cola Weizen, Saft Weizen</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Bier.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">Becks, Lammsbräu Bio, Wulle, Jever, Tannenzäpfle, Ulmer, Astra</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showShotsButton">Shots</button>
+              <div class="container" id="shots">
+                <div class="card">
+                  <img src="../Img/shots.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Totengräber</h5>
+                    <p class="card-text">Vodka und Zitrone</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/shots.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Gimlet</h5>
+                    <p class="card-text">Gin und Lime Juice</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/shots.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Frangelico</h5>
+                    <p class="card-text">Hasehusslikör</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/shots.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">Tequila, Vodka, Sambuca, Fernet Branca, Jägermeister, Saurer Joster </p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-custom mb-2" id="showLDrinksButton">Longdrinks</button>
+              <div class="container" id="longdrinks">
+                <div class="card">
+                  <img src="../Img/Langdrinks.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vodka</h5>
+                    <p class="card-text">Vodka Lemon, Vodka Red Bull</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Langdrinks.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Gin Tonic</h5>
+                    <p class="card-text">Gin Tonic, Monkey Gin</p>
+
+
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Langdrinks.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Campari</h5>
+                    <p class="card-text">Campari Orange, Campari Soda</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Langdrinks.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Jack Daniel's</h5>
+                    <p class="card-text">Jack Daniel's Cola</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Langdrinks.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Krüge</h5>
+                    <p class="card-text">Longdrink Krug, Jack Daniel's Cola Krug, Cuba Libre Krug, Krug Long Island Iced
+                      Tea </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Img/Langdrinks.jpeg" class="card-img-top img-fluid mx-auto d-block speisekarteImg mt-3"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">Havana Cola, Malibu Maracuja, Batida Kirsch, </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function toggleDisplay(button, div) {
+            button.addEventListener('click', () => {
+              if (div.style.display === 'none' || div.style.display === '') {
+                div.style.display = 'block';
+              } else {
+                div.style.display = 'none';
+              }
+            });
+          }
+
+          const showEssenButton = document.getElementById('showEssenButton')
+          const essenDiv = document.getElementById('essen')
+          toggleDisplay(showEssenButton, essenDiv);
+
+          const showWarmeButton = document.getElementById('showWarmeButton')
+          const warmeDiv = document.getElementById('warmeGetraenke')
+          toggleDisplay(showWarmeButton, warmeDiv);
+
+          const showKalteButton = document.getElementById('showKalteButton')
+          const kalteDiv = document.getElementById('kalteGetraenke')
+          toggleDisplay(showKalteButton, kalteDiv);
+
+          const showToGoButton = document.getElementById('showToGoButton')
+          const togoDiv = document.getElementById('togo')
+          toggleDisplay(showToGoButton, togoDiv);
+
+          const showSaefteButton = document.getElementById('showSaefteButton')
+          const saefteDiv = document.getElementById('saefte')
+          toggleDisplay(showSaefteButton, saefteDiv);
+
+          const showCocktailsButton = document.getElementById('showCocktailsButton')
+          const cocktailsDiv = document.getElementById('cocktails')
+          toggleDisplay(showCocktailsButton, cocktailsDiv);
+
+          const showWeinButton = document.getElementById('showWeinButton')
+          const weinDiv = document.getElementById('wein')
+          toggleDisplay(showWeinButton, weinDiv);
+
+          const showSpiritButton = document.getElementById('showSpiritButton')
+          const spiritDiv = document.getElementById('spirituusen')
+          toggleDisplay(showSpiritButton, spiritDiv);
+
+          const showAlkFreiButton = document.getElementById('showAlkFreiButton')
+          const alkfreiDiv = document.getElementById('alkfrei')
+          toggleDisplay(showAlkFreiButton, alkfreiDiv);
+
+          const showBierButton = document.getElementById('showBierButton')
+          const bierDiv = document.getElementById('bier')
+          toggleDisplay(showBierButton,bierDiv);
+
+          const showShotsButton = document.getElementById('showShotsButton')
+          const shotsDiv = document.getElementById('shots')
+          toggleDisplay(showShotsButton,shotsDiv);
+
+          const showLDrinksButton = document.getElementById('showLDrinksButton')
+          const longdrinksDiv = document.getElementById('longdrinks')
+          toggleDisplay(showLDrinksButton, longdrinksDiv);
+        </script>
+</body>
+
+<footer class="py-3 my-4 pt-5 pb-5">
+  <ul class="nav justify-content-center custom-border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="../Index.html" class="nav-link px-2 " style="color: #EEDDCC;">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EEDDCC;">Features</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EEDDCC;">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EEDDCC;">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #EEDDCC;">About</a></li>
+  </ul>
+  <p class="text-center pt-3" style="color: #EEDDCC;">© Cafe Kakadu</p>
+</footer>
+
+
+</html>

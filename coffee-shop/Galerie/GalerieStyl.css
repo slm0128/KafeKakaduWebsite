@@ -1,0 +1,236 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E4CDA7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C3B091;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8e806a;
+}
+
+body {
+    background-color: #7E6A52;
+    /*#e4cda7*/
+
+}
+
+.Main {
+    box-sizing: content-box;
+    /* border: solid black;
+    /* später entfernen nur zum visualisieren überlegen ein margine festzulegen*/
+
+}
+
+.custom-border-bottom {
+    border-bottom: 2px solid #8e806a;
+}
+
+.FooterColor {
+    color: #EEDDCC;
+}
+
+
+.HeaderUnderline {
+    background-color: #70483c;
+    border-bottom: solid 0.1px #a3715a;
+}
+
+header {
+    margin-left: 15%;
+    margin-right: 15%;
+
+
+}
+
+
+.Custom-navbar {
+    background-color: #70483c;
+}
+
+#Hd {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    /* Hintergrundfarbe des Headers anpassen */
+    transition: top 0.3s ease;
+    /* Übergangseffekt mit einer Dauer von 0,3 Sekunden und einer leichten Beschleunigung */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    /*  color: #9c7d68;*/
+}
+
+.navbar-nav .nav-link {
+    font-size: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.Container0 {
+    background-color: #70483c;
+}
+
+.Container1 {
+
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.P {
+
+    padding-top: 4%;
+    padding-bottom: 5%;
+
+}
+
+.HeadingT {
+    padding-top: 25%;
+}
+
+/*bis hier immer gleich*/
+
+.Color1 {
+    background-color: #C5A582;
+    padding-top: 30px;
+}
+
+.Box1 {
+    box-sizing: content-box;
+    /* border: solid black; /*später löschen nur zum visualiesieren*/
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.Box2 {
+    box-sizing: content-box;
+    /*border: solid black; /*später löschen nur zum visualiesieren*/
+    padding-bottom: 20px;
+}
+
+.Box3 {
+    box-sizing: content-box;
+    /*border: solid black; /*später löschen nur zum visualiesieren*/
+    padding-bottom: 20px;
+
+
+}
+
+.wk {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.wk-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.text-inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EEDDCC;
+    text-align: center;
+    background-color: #D1B494;
+    border: solid 5px #D1B494;
+    border-radius: 10px;
+}
+
+.ub {
+    object-fit: cover;
+    transition: transform 0.6s;
+    /* Fügt eine sanfte Überblendung hinzu */
+
+
+
+}
+
+.ub:hover {
+    transform: scale(1.1);
+    /* Vergrößere das Bild auf 110% */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .enlarged-img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 3px solid #D1B494;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #EEDDCC;
+    cursor: pointer;
+  }
+  
+  .nav-btn {
+    position: absolute;
+    font-size: 30px;
+    color: #EEDDCC;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+
+
+
+.Color2 {
+    background-color: #A1876A;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Box4 {
+    box-sizing: content-box;
+    /*border: solid black; /*später löschen nur zum visualiesieren*/
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.video1,
+.video2 {
+    box-sizing: content-box;
+    margin: 50px;
+    text-align: center;
+    padding: 250px;
+    border-radius: 10px;
+    background-color: #D1B494;
+}

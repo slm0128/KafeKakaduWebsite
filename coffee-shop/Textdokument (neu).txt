@@ -1,0 +1,11 @@
+http://www.maurer-kaffeewelten.de/
+http://www.cafe-kakadu.de/
+https://www.arnolds-kaffeemanufaktur.de/kopie-von-kaffeekunde-einfuehrung
+
+https://getbootstrap.com/
+https://www.youtube.com/watch?v=ZRsIPaGpeS0&ab_channel=Programmierenlernen
+
+
+
+
+farben:rgba(231,193,149,255) #e7c195

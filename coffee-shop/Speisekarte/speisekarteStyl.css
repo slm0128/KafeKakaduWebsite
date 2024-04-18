@@ -1,0 +1,156 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E4CDA7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C3B091;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8e806a;
+}
+
+body {
+    background-color: #7E6A52;
+    /*#e4cda7*/
+
+}
+
+.Main {
+    box-sizing: content-box;
+    /* border: solid black;
+    /* später entfernen nur zum visualisieren überlegen ein margine festzulegen*/
+
+}
+
+.custom-border-bottom {
+    border-bottom: 2px solid #8e806a;
+}
+
+.HeaderUnderline {
+    background-color: #70483c;
+    border-bottom: solid 0.1px #a3715a;
+}
+
+header {
+    margin-left: 15%;
+    margin-right: 15%;
+
+
+}
+
+
+.Custom-navbar {
+    background-color: #70483c;
+}
+
+#Hd {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    /* Hintergrundfarbe des Headers anpassen */
+    transition: top 0.3s ease;
+    /* Übergangseffekt mit einer Dauer von 0,3 Sekunden und einer leichten Beschleunigung */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+    font-size: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.Container0 {
+    background-color: #70483c;
+}
+
+.Container1 {
+
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.P {
+
+    padding-top: 4%;
+    padding-bottom: 5%;
+
+}
+
+.HeadingT {
+    padding-top: 25%;
+}
+/*bis hier immer gleich*/
+.Color1{
+    background-color: #C5A582;
+    padding-top: 20px;
+}
+
+
+.Box1 {
+    box-sizing: content-box;
+    /* border: solid black; /*später entfernen nur zum visualisieren*/
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.Box2 {
+    box-sizing: content-box;
+    /*border: solid black;   /*später entfernen nur zum visualisieren*/
+
+}
+
+.speisekarteImg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.dropdown-item:active
+{
+    background-color: white;
+    color: black;
+}
+
+.dropdown-item:hover
+{
+    background-color: #C3B091;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+.btn-custom
+{
+    background-color: #eeddcc;
+    border-color: #ccbbaa;
+}
+
+.btn-custom:hover
+{
+    background-color: #ccbbaa;
+    border-color: #ccbbaa;
+}
+
+.btn-custom:active
+{
+    border-color: #ccbbaa;
+}
+
+.container
+{
+    display: none;
+}
